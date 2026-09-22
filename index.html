@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>Excel + Power BI desde cero | Aprende a crear dashboards</title>
+    <meta name="description" content="Aprende Excel y Power BI desde cero y descubre cómo transformar datos en informes y dashboards profesionales. Acceso de por vida por US$6,90." />
+    <meta property="og:title" content="Excel + Power BI desde cero | Aprende a crear dashboards" />
+    <meta property="og:description" content="Aprende Excel y Power BI desde cero y descubre cómo transformar datos en informes y dashboards profesionales. Acceso de por vida por US$6,90." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Polyfill window.fetch setter for third-party scripts -->
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (originalFetch) {
+            var boundFetch = originalFetch.bind(window);
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() {
+                return boundFetch;
+              },
+              set: function(customFetch) {
+                boundFetch = customFetch;
+              }
+            });
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(e) {
+          if (e && (
+            (e.filename && e.filename.indexOf('connect.facebook.net') !== -1) ||
+            (e.message && e.message.indexOf('Cannot set property fetch') !== -1)
+          )) {
+            e.preventDefault();
+            return true;
+          }
+        });
+      })();
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2576041606236840');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body class="bg-[#0b1329] text-slate-100 antialiased selection:bg-blue-600 selection:text-white min-h-screen">
+    <!-- Meta Pixel NoScript fallback in body -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2576041606236840&ev=PageView&noscript=1"
+        alt="Meta Pixel" />
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
