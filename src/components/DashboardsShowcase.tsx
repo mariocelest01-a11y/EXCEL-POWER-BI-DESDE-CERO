@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { scrollToOffer } from "../utils/tracking";
 import { BarChart, DollarSign, TrendingUp, Users, Target, ArrowRight, Eye, Layout } from "lucide-react";
+import salesDashboardImg from "../assets/images/sales_dashboard_ui_1790110796114.jpg";
+import financeDashboardImg from "../assets/images/finance_dashboard_ui_1790110806161.jpg";
 
 export const DashboardsShowcase: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("ventas");
@@ -73,7 +75,7 @@ export const DashboardsShowcase: React.FC = () => {
               <div className="space-y-4">
                 <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden border border-slate-800">
                   <img
-                    src="/src/assets/images/sales_dashboard_ui_1790110796114.jpg"
+                    src={salesDashboardImg}
                     alt="Dashboard ejecutivo de Ventas con KPIs y tendencias"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -105,7 +107,7 @@ export const DashboardsShowcase: React.FC = () => {
               <div className="space-y-4">
                 <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden border border-slate-800">
                   <img
-                    src="/src/assets/images/finance_dashboard_ui_1790110806161.jpg"
+                    src={financeDashboardImg}
                     alt="Dashboard financiero con flujos de caja y márgenes de utilidad"
                     className="w-full h-full object-cover"
                     loading="lazy"

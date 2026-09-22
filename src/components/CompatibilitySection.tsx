@@ -1,5 +1,6 @@
 import React from "react";
 import { Smartphone, Laptop, Tablet, Check } from "lucide-react";
+import devicesMockupImg from "../assets/images/devices_responsive_mockup_1790110818186.jpg";
 
 export const CompatibilitySection: React.FC = () => {
   const devices = [
@@ -37,7 +38,7 @@ export const CompatibilitySection: React.FC = () => {
         <div className="rounded-2xl border border-slate-800 overflow-hidden bg-slate-950 mb-8 max-w-3xl mx-auto shadow-xl">
           <div className="aspect-[16/9] w-full">
             <img
-              src="/src/assets/images/devices_responsive_mockup_1790110818186.jpg"
+              src={devicesMockupImg}
               alt="Visualización en laptop, tablet y smartphone"
               className="w-full h-full object-cover"
               loading="lazy"

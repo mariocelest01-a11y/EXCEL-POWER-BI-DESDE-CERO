@@ -2,6 +2,7 @@ import React from "react";
 import { scrollToOffer } from "../utils/tracking";
 import { PRODUCT_INFO } from "../config/site";
 import { ShieldCheck, Zap, Layers, ArrowRight } from "lucide-react";
+import heroMockupImage from "../assets/images/hero_dashboard_mockup_1790110784217.jpg";
 
 export const Hero: React.FC = () => {
   return (
@@ -82,7 +83,7 @@ export const Hero: React.FC = () => {
             {/* Hero Mockup Image */}
             <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-950">
               <img
-                src="/src/assets/images/hero_dashboard_mockup_1790110784217.jpg"
+                src={heroMockupImage}
                 alt="Mockup de Excel y Power BI con dashboards interactivos y hojas de cálculo analíticas"
                 className="w-full h-full object-cover object-center"
                 loading="eager"
